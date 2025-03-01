@@ -1,0 +1,1 @@
+This is a professional portfolio website for **MulaKala Siva Ramakrishna**,specializing in AI, Machine Learning, Deep Learning, NLP, and Generative AI. It showcases his **skills, projects, experience**, and social profiles, offering insights into his expertise in building AI-driven solutions, recommendation systems, and NLP applications.
