@@ -8,7 +8,7 @@
 }
 
 :root {
-    --primary-color: #b74b4b;
+    --primary-color: #b74b4b; /* Your primary color */
     --secondary-color: #1a1a1a;
     --text-color: #e0e0e0;
 }
@@ -35,11 +35,12 @@ header {
 .logo {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Use the primary color (#b74b4b) */
 }
 
+/* Header Navigation Links */
 nav a {
-    color: var(--text-color);
+    color: var(--primary-color); /* Use the primary color (#b74b4b) */
     margin-left: 2.5rem;
     font-size: 1.1rem;
     font-weight: 500;
@@ -54,7 +55,7 @@ nav a::after {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background: var(--primary-color);
+    background: var(--primary-color); /* Use the primary color (#b74b4b) */
     transition: 0.3s;
 }
 
@@ -158,25 +159,15 @@ section {
     color: var(--primary-color);
     transform: translateY(-3px);
 }
-.hero-image img {
-    width: 500px;        /* Fixed width */
-    height: 500px;       /* Matching height for perfect circle */
-    border-radius: 50%;  /* Makes it elliptical/circular */
-    object-fit: cover;   /* Ensures image fills container */
-    display: block;      /* Removes any default spacing */
-    margin: 0 auto;      /* Centers the image */
-}
-/* .hero-image {
-    position: relative;
-    text-align: center;
-}
 
 .hero-image img {
-    width: 0%;
-    max-width: 500px;
-    border-radius: 2rem;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-} */
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
 
 /* Skills Section */
 .skills-grid {
@@ -217,6 +208,52 @@ section {
     margin: 1rem 0;
     font-size: 1.1rem;
     opacity: 0.9;
+}
+
+/* Education Section */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.education-item {
+    background: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: transform 0.3s;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Certifications Section */
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.certification-item {
+    background: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: transform 0.3s;
+}
+
+.certification-item:hover {
+    transform: translateY(-5px);
+}
+
+.certification-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: 500;
 }
 
 /* Projects Section */
@@ -292,19 +329,6 @@ section {
     text-align: center;
 }
 
-.info-item {
-    margin: 2rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.info-item i {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-}
-
 .social-links {
     display: flex;
     justify-content: center;
@@ -337,10 +361,6 @@ section {
         padding-top: 8rem;
     }
 
-    .hero-image img {
-        max-width: 400px;
-    }
-
     .cta-container {
         justify-content: center;
     }
@@ -355,4 +375,12 @@ section {
         margin-left: 1.5rem;
         font-size: 1rem;
     }
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
