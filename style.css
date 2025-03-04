@@ -384,3 +384,49 @@ section {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+/* Contact Section */
+.contact-info {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 1rem; /* Space between phone and email */
+    margin-bottom: 2rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center; /* Vertically center the icon and text */
+    gap: 0.8rem; /* Space between icon and text */
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.info-item i {
+    color: var(--primary-color); /* Use the primary color (#b74b4b) */
+    font-size: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 2rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 2rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-btn:hover {
+    background: var(--primary-color);
+    color: var(--text-color);
+}
