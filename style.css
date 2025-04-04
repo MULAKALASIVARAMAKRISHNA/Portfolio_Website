@@ -8,7 +8,7 @@
 }
 
 :root {
-    --primary-color: #b74b4b; /* Your primary color */
+    --primary-color: #b74b4b;
     --secondary-color: #1a1a1a;
     --text-color: #e0e0e0;
 }
@@ -342,12 +342,21 @@ section {
     align-items: center;
     gap: 0.8rem;
     font-size: 1.2rem;
-    color: var(--text-color);
 }
 
 .info-item i {
     color: var(--primary-color);
     font-size: 1.5rem;
+}
+
+.contact-link {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-link:hover {
+    color: var(--primary-color);
 }
 
 .social-links {
@@ -371,7 +380,7 @@ section {
 
 .social-btn:hover {
     background: var(--primary-color);
-    color: none;
+    color: #fff;
 }
 
 /* Responsive Design */
