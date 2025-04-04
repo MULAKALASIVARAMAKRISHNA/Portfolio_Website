@@ -430,12 +430,3 @@ section {
     background: var(--primary-color);
     color: var(--text-color);
 }
-.contact-link {
-    color: var(--text-color);
-    text-decoration: none; /* Removes the default underline */
-    transition: 0.3s;
-}
-
-.contact-link:hover {
-    color: var(--primary-color); /* Changes to #b74b4b on hover */
-}
