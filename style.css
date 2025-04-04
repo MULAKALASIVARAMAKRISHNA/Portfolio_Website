@@ -342,21 +342,22 @@ section {
     align-items: center;
     gap: 0.8rem;
     font-size: 1.2rem;
+    color: var(--text-color);
 }
 
-.info-item i {
-    color: var(--primary-color);
-    font-size: 1.5rem;
-}
-
-.contact-link {
+.info-item a {
     color: var(--text-color);
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.contact-link:hover {
+.info-item a:hover {
     color: var(--primary-color);
+}
+
+.info-item i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
 }
 
 .social-links {
@@ -381,22 +382,6 @@ section {
 .social-btn:hover {
     background: var(--primary-color);
     color: #fff;
-}
-/* Updated Contact Section Styles */
-.contact-link {
-    color: var(--text-color); /* This is white (#e0e0e0) as defined in your root variables */
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.contact-link:hover {
-    color: var(--primary-color); /* This will change to your primary color (#b74b4b) on hover */
-}
-
-/* Ensure the info-item maintains its layout */
-.info-item a {
-    display: inline-block;
-    color: inherit; /* Inherits the white color from parent */
 }
 
 /* Responsive Design */
