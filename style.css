@@ -430,3 +430,8 @@ section {
     background: var(--primary-color);
     color: var(--text-color);
 }
+
+.social-btn:hover {
+    background: var(--primary-color);
+    color: var(--text-color);
+}
