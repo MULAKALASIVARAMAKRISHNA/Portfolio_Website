@@ -382,6 +382,22 @@ section {
     background: var(--primary-color);
     color: #fff;
 }
+/* Updated Contact Section Styles */
+.contact-link {
+    color: var(--text-color); /* This is white (#e0e0e0) as defined in your root variables */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-link:hover {
+    color: var(--primary-color); /* This will change to your primary color (#b74b4b) on hover */
+}
+
+/* Ensure the info-item maintains its layout */
+.info-item a {
+    display: inline-block;
+    color: inherit; /* Inherits the white color from parent */
+}
 
 /* Responsive Design */
 @media (max-width: 992px) {
