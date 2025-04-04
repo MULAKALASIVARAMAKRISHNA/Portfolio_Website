@@ -371,7 +371,7 @@ section {
 
 .social-btn:hover {
     background: var(--primary-color);
-    color: #fff;
+    color: none;
 }
 
 /* Responsive Design */
